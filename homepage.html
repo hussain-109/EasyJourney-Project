@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="New folder/favicon.ico">
+    <title>EasyJourney</title>
+    <link rel="stylesheet" href="home css.css">
+   
+</head>
+
+<body>
+    <div class="heading">
+
+
+        <div class="form">
+            <img id="logo" src="New folder/Easy_Journey-removebg-preview.png" height="100px" width="120px">
+            <div class="date">
+                <p id="formi">Date of Journey : </p><input type="date">
+            </div>
+            <div class="src">
+                <p id="formi">Source station : </p><input type="text" placeholder="CODE">
+            </div>
+            <div class="dest">
+                <p id="formi">Destination station : </p><input type="text" placeholder="CODE">
+            </div>
+            <div class="searchBtn" onclick="check()">Show Trains</div>
+            
+        </div>
+
+        <div class="pannels" id="train">
+            <!-- <div class="trainsAvailable"> -->
+            <div class="h">Trains Available</div>
+            <div class="trainList">
+                <div id="setUpdate"></div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="trainListItem">
+                    <div class="t_Img">
+                        <img src="New folder/train (1).png" alt="">
+                    </div>
+                    <div class="tName"></div>
+                    <div class="ss_tag">Depart At</div>
+                    <div class="time_tag">Total Time</div>
+                    <div class="ds_tag">Arrive At</div>
+                    <div class="ssdetails"></div>
+                    <div class="timeLine"></div>
+                    <div class="dsdetails"></div>
+                </div>
+                <div class="goButton" onclick="T_Book()">Book Tickets</div>
+            </div>
+        </div>
+        <div class="pannels" id="visit">
+            <div class="visit_form">
+                <input type="text" placeholder="Destination Place">
+                <div class="searchBtn" onclick="printPlaces()">Search</div>
+                <p class="formi">Tourist Places</p>
+            </div>
+            <div id="visitPlaceList">
+                <ul ></ul>
+        </div>
+        </div>
+    </div>
+    <div id="signOutUser"><img id="signOut" src="New folder/user.png" alt=""> Sign Out</div>
+    <script src="back.js"></script>
+</body>
+
+<script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { signInWithEmailAndPassword, getAuth, signInWithPopup, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyD9PcCBlTZf8hx8Rt4px0-UjsjwSAAJ700",
+        authDomain: "easyjourney-8f109.firebaseapp.com",
+        projectId: "easyjourney-8f109",
+        storageBucket: "easyjourney-8f109.appspot.com",
+        messagingSenderId: "209558077145",
+        appId: "1:209558077145:web:f74feea1da41b7010248c8"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    signOutUser.addEventListener('click', (e) => {
+        signOut(auth).then(() => {
+            //sign out succesful
+            alert('User Logged out');
+            location.replace('index.html');
+        }).catch((error) => {
+            //an error happened
+            const errorCode = error.code;
+            const errorMessage = error.Message;
+            alert(errorMessage);
+        })
+    })
+</script>
+
+
+</html>

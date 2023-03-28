@@ -1,0 +1,353 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*::selection {
+    background-color: none;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.form {
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(63, 31, 221);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px 5px blue;
+    border-right: 4px solid rgb(0, 0, 135);
+}
+
+input {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(242, 237, 237, 0.3);
+    border: 2px solid blue;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::selection {
+    background-color: blueviolet;
+}
+
+#formi {
+    margin: 0px 10px;
+    color: white;
+    font-size: 25px;
+    /* font-family: 'forte'; */
+
+}
+
+#logo {
+    margin: 10px auto 30px;
+}
+
+.searchBtn {
+    margin: 20px;
+    float: right;
+    background-color: rgb(249, 68, 68);
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchBtn:nth-child(2) {
+    width: 70px
+}
+
+.searchBtn:hover {
+    background-color: red;
+}
+
+.pannels {
+    width: 40vw;
+    height: 100vh;
+    background-color: #f1ecec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#train {
+    border-right: 1px solid rgb(0, 0, 135);
+    box-shadow : 0rem 2rem 15rem 10px blue inset;
+}
+
+#visit {
+    border-right: 1px solid rgb(0, 0, 135);
+    box-shadow : 0rem 2rem 15rem 10px blue inset;
+}
+
+.h {
+    width: 40vw;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* border-bottom: 2px solid blue; */
+    background-color: rgb(63, 31, 221);
+    color: whitesmoke;
+    border-bottom: 5px solid rgb(0, 0, 135);
+}
+
+.goButton {
+    margin: 20px;
+    float: right;
+    background-color: rgb(249, 68, 68);
+    color: white;
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    cursor: pointer;
+    display: none;
+}
+
+.goButton:hover {
+    background-color: red;
+}
+
+#setUpdate {
+    font-size: 2rem;
+}
+
+.trainList {
+    width: 35vw;
+    margin-top: 2rem;
+    overflow: scroll;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.trainListItem {
+    width: 32vw;
+    height: 8rem;
+    background-color: rgb(243, 225, 110);
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 5px 0px black; */
+    box-shadow: 5px 5px 10px rgb(117, 116, 116);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 4rem auto auto;
+    margin: 0rem auto 2rem auto;
+    border: 2px solid black;
+    display: none;
+}
+
+.t_Img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    width: 2rem;
+
+}
+
+.tName {
+    grid-row: 1/2;
+    grid-column: 2/5;
+    display: flex;
+    align-items: center;
+    color: Red;
+    font-size: 1.3rem;
+}
+
+.ssdetails {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.dsdetails {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.timeLine {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.ss_tag {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+}
+
+.ds_tag {
+    grid-row: 2/3;
+    grid-column: 4/5;
+
+    display: flex;
+    justify-content: center;
+}
+
+.visit_form {
+    width: 40vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom: 5px solid rgb(0, 0, 135);
+    background-color: rgb(63, 31, 221);
+    color: whitesmoke;
+}
+
+#visitPlaceList {
+     font-size: 1.8rem;
+     color: rgb(213, 6, 61);
+     margin: 2rem 0rem 2rem 1.5rem;
+    height: 78vh;
+    width: 30vw;
+    font-family: Calibri;  
+    overflow: scroll;
+}
+
+
+.time_tag {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+}
+
+#signOutUser {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#signOut {
+    margin: auto 5px;
+}
+@media only screen and (max-width : 428px) {
+    .heading {
+        flex-direction: column;
+        
+    }
+    .form {
+        width: 100vw;
+        height: 35rem;
+        border-bottom: 4px solid darkblue;
+    }
+    input {
+        width: 80vw;
+        height: 30px;
+    }
+    .pannels {
+        width: 100vw;
+        height: 95vh;
+    }
+    .h {
+        width: 100vw;
+    }
+    .trainList {
+        width: 100vw;
+        height: 65vh;
+    }
+    .trainListItem {
+        width: 85vw;
+        grid-template-rows: 3rem auto auto;
+    }
+    .t_Img img{
+        width: 1.5rem;
+    }
+    
+    .tName {
+        font-size: 1rem;
+    }
+    
+    .ssdetails {
+        font-size: 1.0rem;
+    }
+    
+    .dsdetails {
+        font-size: 1.0rem;
+    }
+    
+    .timeLine {
+        font-size: 1.0rem;
+    }
+    .goButton {
+        position: absolute;
+        bottom: -78vh;
+    }
+    .visit_form {
+        width: 100vw;
+        height: 7.3rem;
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    .visit_form input{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 90vw;
+        margin-bottom: 0rem;
+    }
+    #signOutUser {
+        bottom:0rem;
+        left: 0rem;
+        align-items: center;
+        height: 3rem;
+        width: 100vw;
+        background-color: rgb(34, 147, 234);
+        box-shadow : 0rem 3rem 5rem 4rem rgb(0, 0, 0);
+    }
+    #visitPlaceList {
+        margin: 2rem 0rem 5rem 1.5rem;
+       height: 78vh;
+       width: 90vw;
+       overflow: scroll;
+   }
+}
